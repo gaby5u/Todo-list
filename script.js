@@ -18,14 +18,7 @@ function renderTodoList() {
     <div>${name}</div>
     <div> ${dueDate} </div>
     <button onclick = "todoList.splice(${i}, 1); renderTodoList()" class="delete-todo-button" >Delete</button>`;
-    // if (window.innerWidth <= 480) {
-    //   html = `
-    //   <div class="name-due-date">
-    //   <div>${name}</div>
-    //   <div> ${dueDate} </div>
-    //   </div>
-    // <button onclick = "todoList.splice(${i}, 1); renderTodoList()" class="delete-todo-button" >Delete</button>`;
-    // }
+
     todoListHTML += html;
   }
   localStorage.setItem("todoList", JSON.stringify(todoList));
