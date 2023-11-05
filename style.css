@@ -47,10 +47,15 @@ body {
 
   .todo-grid,
   .todo-input-grid {
+    align-items: start;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 80%;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
   }
 
   .todo-grid {
